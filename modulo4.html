@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4: Precursores y Exponentes | Sociología</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo"><h1>📚 Sociología</h1></div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="modulo1.html">Módulo 1: Ciencia</a></li>
+                    <li><a href="modulo2.html">Módulo 2: Conceptualización</a></li>
+                    <li><a href="modulo3.html">Módulo 3: Historia</a></li>
+                    <li><a href="modulo4.html" class="active">Módulo 4: Precursores</a></li>
+                    <li><a href="modulo5.html">Módulo 5: Corrientes</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="module-header">
+            <div class="container">
+                <h1>Módulo 4: Precursores y Exponentes de la Sociología</h1>
+                <p class="module-subtitle">Perfiles de los pensadores clave que fundaron la disciplina</p>
+            </div>
+        </section>
+
+        <section class="module-content">
+            <div class="container">
+                <article class="content-section">
+                    <h2>🎓 Los Grandes Pensadores de la Sociología</h2>
+                    <p>
+                        El desarrollo de la Sociología no fue obra de una sola persona, sino de múltiples intelectuales que, 
+                        a lo largo del siglo XIX y principios del XX, aportaron perspectivas únicas sobre la sociedad. 
+                        Estos son los más destacados:
+                    </p>
+                </article>
+
+                <!-- Tarjetas Desplegables de Precursores -->
+                <article class="content-section">
+                    <h2>📋 Perfiles de Precursores y Exponentes</h2>
+                    <p>Haz clic en cada filósofo para explorar su vida, obras y contribuciones:</p>
+                    
+                    <div class="thinkers-accordion">
+                        <!-- Claude Henri de Saint-Simon -->
+                        <div class="thinker-card">
+                            <button class="thinker-header" onclick="toggleThinker(this)">
+                                <h3>Claude Henri de Saint-Simon (1760-1825)</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="thinker-content" style="display: none;">
+                                <div class="thinker-body">
+                                    <p><strong>Contexto:</strong> Filósofo francés de la Ilustración tardía</p>
+                                    <p><strong>Contribución Principal:</strong> Propuso aplicar métodos científicos al estudio de la sociedad. Acuñó términos como "fisiología social".</p>
+                                    <p><strong>Obra Destacada:</strong> "Introducción a los trabajos científicos del siglo XIX" (1807)</p>
+                                    <p><strong>Ideas Clave:</strong> La sociedad debe organizarse conforme a principios científicos, no religiosos o tradicionales. Identificó diferentes etapas históricas.</p>
+                                    <p><strong>Influencia:</strong> Inspiró a positivistas posteriores como Auguste Comte.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Auguste Comte -->
+                        <div class="thinker-card">
+                            <button class="thinker-header" onclick="toggleThinker(this)">
+                                <h3>Auguste Comte (1798-1857)</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="thinker-content" style="display: none;">
+                                <div class="thinker-body">
+                                    <p><strong>Contexto:</strong> Filósofo y matemático francés, discípulo de Saint-Simon</p>
+                                    <p><strong>Contribución Principal:</strong> Fundador oficial de la Sociología. Acuñó el término "Sociología" en 1838. Desarrolló el Positivismo.</p>
+                                    <p><strong>Obra Destacada:</strong> "Curso de Filosofía Positiva" (1830-1842), "Discurso sobre el espíritu positivo" (1844)</p>
+                                    <p><strong>Ideas Clave:</strong> Ley de los tres estadios (teológico, metafísico, positivo). La sociología debe ser científica, basada en observación y experimentación.</p>
+                                    <p><strong>Legado:</strong> Estableció los fundamentos del método científico en sociología.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Herbert Spencer -->
+                        <div class="thinker-card">
+                            <button class="thinker-header" onclick="toggleThinker(this)">
+                                <h3>Herbert Spencer (1820-1903)</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="thinker-content" style="display: none;">
+                                <div class="thinker-body">
+                                    <p><strong>Contexto:</strong> Filósofo e ingeniero británico</p>
+                                    <p><strong>Contribución Principal:</strong> Desarrolló la teoría del "organicismo social" y aplicó conceptos evolutivos a la sociología.</p>
+                                    <p><strong>Obra Destacada:</strong> "Principios de Sociología" (1876)</p>
+                                    <p><strong>Ideas Clave:</strong> La sociedad es como un organismo vivo que evoluciona. "Supervivencia del más apto" aplicada al desarrollo social.</p>
+                                    <p><strong>Crítica:</strong> Su darwinismo social fue criticado por justificar desigualdades naturales.</p>
+                                    <p><strong>Influencia:</strong> Importante para el funcionalismo posterior.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Émile Durkheim -->
+                        <div class="thinker-card">
+                            <button class="thinker-header" onclick="toggleThinker(this)">
+                                <h3>Émile Durkheim (1858-1917)</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="thinker-content" style="display: none;">
+                                <div class="thinker-body">
+                                    <p><strong>Contexto:</strong> Sociólogo francés, profesor de la Universidad de Bordeaux</p>
+                                    <p><strong>Contribución Principal:</strong> Consolidó la Sociología como disciplina académica respetable. Desarrolló métodos empíricos rigurosos.</p>
+                                    <p><strong>Obra Destacada:</strong> "El Suicidio" (1897), "La División del Trabajo Social" (1893), "Las Formas Elementales de la Vida Religiosa" (1912)</p>
+                                    <p><strong>Ideas Clave:</strong> Los hechos sociales son "cosas" que pueden estudiarse científicamente. Concepto de "conciencia colectiva". Solidaridad orgánica vs. mecánica.</p>
+                                    <p><strong>Método:</strong> Uso riguroso de estadísticas. Su estudio sobre el suicidio fue revolucionario.</p>
+                                    <p><strong>Legado:</strong> Fundador del funcionalismo sociológico. Influencia permanente en la disciplina.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Karl Marx -->
+                        <div class="thinker-card">
+                            <button class="thinker-header" onclick="toggleThinker(this)">
+                                <h3>Karl Marx (1818-1883)</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="thinker-content" style="display: none;">
+                                <div class="thinker-body">
+                                    <p><strong>Contexto:</strong> Filósofo alemán, economista político y revolucionario</p>
+                                    <p><strong>Contribución Principal:</strong> Desarrolló el materialismo histórico como marco para entender la sociedad. Análisis profundo del capitalismo y conflicto de clases.</p>
+                                    <p><strong>Obra Destacada:</strong> "El Manifiesto Comunista" (1848), "El Capital" (1867)</p>
+                                    <p><strong>Ideas Clave:</strong> La economía determina la estructura social. La historia es lucha de clases. El capitalismo produce contradicciones inherentes.</p>
+                                    <p><strong>Influencia:</strong> Aunque no se consideraba "sociólogo", revolucionó el análisis social. Inspiró el marxismo sociológico contemporáneo.</p>
+                                    <p><strong>Crítica:</strong> Algunos lo consideran más filósofo e ideólogo que científico.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Max Weber -->
+                        <div class="thinker-card">
+                            <button class="thinker-header" onclick="toggleThinker(this)">
+                                <h3>Max Weber (1864-1920)</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="thinker-content" style="display: none;">
+                                <div class="thinker-body">
+                                    <p><strong>Contexto:</strong> Sociólogo e historiador alemán, figura clave en la sociología clásica</p>
+                                    <p><strong>Contribución Principal:</strong> Desarrolló la "sociología comprensiva" (Verstehen). Análisis de la racionalización en la sociedad moderna.</p>
+                                    <p><strong>Obra Destacada:</strong> "La Ética Protestante y el Espíritu del Capitalismo" (1905), "Economía y Sociedad" (1922)</p>
+                                    <p><strong>Ideas Clave:</strong> Importancia de la intención subjetiva (Verstehen). Concepto de "tipo ideal". Análisis de autoridad y legitimidad. Racionalización como tendencia moderna.</p>
+                                    <p><strong>Método:</strong> Síntesis de análisis cualitativos e históricos. Énfasis en contextos culturales e ideales tipos.</p>
+                                    <p><strong>Legado:</strong> Figura central en la sociología occidental. Proporciona contrapeso al positivismo puro.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Otros Pensadores Importantes -->
+                        <div class="thinker-card">
+                            <button class="thinker-header" onclick="toggleThinker(this)">
+                                <h3>Otros Pensadores Importantes</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="thinker-content" style="display: none;">
+                                <div class="thinker-body">
+                                    <p><strong>Vilfredo Pareto (1848-1923):</strong> Economista italiano. Teoría de las élites y análisis de estabilidad social.</p>
+                                    <p><strong>Georg Simmel (1858-1918):</strong> Sociólogo alemán. Teoría del conflicto y análisis de dinámicas grupales pequeñas.</p>
+                                    <p><strong>Ferdinand Tönnies (1855-1936):</strong> Sociólogo alemán. Distinción Gemeinschaft (comunidad) vs. Gesellschaft (sociedad).</p>
+                                    <p><strong>Talcott Parsons (1902-1979):</strong> Sociólogo estadounidense. Desarrolló el funcionalismo estructural.</p>
+                                    <p><strong>C. Wright Mills (1916-1962):</strong> Sociólogo estadounidense. Crítica al establishment y teoría de la "élite del poder".</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-section">
+                    <h2>🔗 Conexiones entre los Grandes Pensadores</h2>
+                    <p>
+                        Aunque cada pensador desarrolló perspectivas únicas, existe una red de influencias intelectuales:
+                    </p>
+                    <ul class="content-list">
+                        <li>Saint-Simon → Inspiró a Comte y a los positivistas</li>
+                        <li>Comte → Influyó en Durkheim y estableció el programa positivista</li>
+                        <li>Marx → Desarrolló alternativa materialista a Comte; influyó en Weber</li>
+                        <li>Durkheim ↔ Weber → Debatieron sobre métodos y enfoques; produjeron síntesis posteriores</li>
+                        <li>Spencer → Proporciona puente entre evolución biológica y sociológica</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="interactive-section">
+            <div class="container">
+                <h2>✅ Verifica tu Comprensión</h2>
+                <div class="quiz">
+                    <div class="quiz-question">
+                        <p><strong>1. ¿Quién consolidó la Sociología como disciplina académica respetable mediante métodos empíricos rigurosos?</strong></p>
+                        <label><input type="radio" name="q1"> a) Auguste Comte</label>
+                        <label><input type="radio" name="q1"> b) Émile Durkheim</label>
+                        <label><input type="radio" name="q1"> c) Max Weber</label>
+                    </div>
+                    <div class="quiz-question">
+                        <p><strong>2. ¿Cuál es el concepto principal de la "sociología comprensiva" de Max Weber?</strong></p>
+                        <label><input type="radio" name="q2"> a) Verstehen (comprensión interpretativa)</label>
+                        <label><input type="radio" name="q2"> b) Hechos sociales como cosas</label>
+                        <label><input type="radio" name="q2"> c) Supervivencia del más apto</label>
+                    </div>
+                    <button class="quiz-button" onclick="checkQuiz()">Verificar Respuestas</button>
+                    <div id="quizResult"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="module-navigation">
+            <div class="container">
+                <div class="nav-buttons">
+                    <a href="modulo3.html" class="nav-button prev">← Módulo 3</a>
+                    <a href="modulo5.html" class="nav-button next">Módulo 5 →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Proyecto de Sociología | Ingeniería en Sistemas</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

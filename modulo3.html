@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3: Desarrollo Histórico | Sociología</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo"><h1>📚 Sociología</h1></div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="modulo1.html">Módulo 1: Ciencia</a></li>
+                    <li><a href="modulo2.html">Módulo 2: Conceptualización</a></li>
+                    <li><a href="modulo3.html" class="active">Módulo 3: Historia</a></li>
+                    <li><a href="modulo4.html">Módulo 4: Precursores</a></li>
+                    <li><a href="modulo5.html">Módulo 5: Corrientes</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="module-header">
+            <div class="container">
+                <h1>Módulo 3: Desarrollo Histórico de la Sociología</h1>
+                <p class="module-subtitle">Contexto sociohistórico del surgimiento de la disciplina</p>
+            </div>
+        </section>
+
+        <section class="module-content">
+            <div class="container">
+                <article class="content-section">
+                    <h2>📜 Origen y Contexto de la Sociología</h2>
+                    <p>
+                        La Sociología emerge como disciplina científica formal a mediados del siglo XIX. Sin embargo, 
+                        su surgimiento no fue espontáneo, sino resultado de transformaciones profundas en la sociedad europea.
+                    </p>
+                    <p>
+                        Tres eventos históricos cruciales condicionaron el surgimiento de la Sociología:
+                    </p>
+                </article>
+
+                <!-- Línea de Tiempo Interactiva -->
+                <article class="content-section">
+                    <h2>⏳ Línea de Tiempo Interactiva: Los Grandes Eventos Históricos</h2>
+                    <p>Haz clic en los eventos para aprender más:</p>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item" onclick="toggleTimeline(0)" style="cursor: pointer;">
+                            <div class="timeline-marker">1</div>
+                            <div class="timeline-content">
+                                <h3>Revolución Francesa (1789)</h3>
+                                <div class="timeline-details" id="details0" style="display: none;">
+                                    <p>
+                                        <strong>Impacto Social:</strong> Cuestionó la estructura feudal, planteó derechos humanos 
+                                        universales y generó profunda inestabilidad social.
+                                    </p>
+                                    <p>
+                                        <strong>Relevancia para la Sociología:</strong> Demostró que las estructuras sociales 
+                                        pueden cambiar y que es necesario entender las fuerzas que generan transformación social.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" onclick="toggleTimeline(1)" style="cursor: pointer;">
+                            <div class="timeline-marker">2</div>
+                            <div class="timeline-content">
+                                <h3>Revolución Industrial (1760-1840)</h3>
+                                <div class="timeline-details" id="details1" style="display: none;">
+                                    <p>
+                                        <strong>Transformaciones:</strong> Mecanización de la producción, urbanización acelerada, 
+                                        surgimiento de nuevas clases sociales (burguesía industrial, proletariado).
+                                    </p>
+                                    <p>
+                                        <strong>Relevancia para la Sociología:</strong> Generó desigualdades extremas y conflictos 
+                                        sociales que demandaban comprensión sistemática de los fenómenos sociales.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" onclick="toggleTimeline(2)" style="cursor: pointer;">
+                            <div class="timeline-marker">3</div>
+                            <div class="timeline-content">
+                                <h3>Ilustración y Pensamiento Científico (Siglo XVIII)</h3>
+                                <div class="timeline-details" id="details2" style="display: none;">
+                                    <p>
+                                        <strong>Características:</strong> Énfasis en la razón, método científico y progreso humano. 
+                                        Crítica a la autoridad tradicional.
+                                    </p>
+                                    <p>
+                                        <strong>Relevancia para la Sociología:</strong> Proporcionó las herramientas intelectuales 
+                                        para estudiar la sociedad de forma "científica" y racional.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-section">
+                    <h2>🌍 Condiciones Sociales que Propiciaron la Sociología</h2>
+                    <div class="conditions-grid">
+                        <div class="condition-card">
+                            <h3>1. Crisis de Autoridad</h3>
+                            <p>
+                                La Revolución Francesa cuestionó autoridades tradicionales (iglesia, monarquía absoluta), 
+                                generando incertidumbre sobre cómo organizar la sociedad.
+                            </p>
+                        </div>
+                        <div class="condition-card">
+                            <h3>2. Conflicto Social Masivo</h3>
+                            <p>
+                                La Revolución Industrial creó divisiones de clase profundas, desempleo, pobreza urbana y 
+                                movimientos obreros que demandaban análisis sistemático.
+                            </p>
+                        </div>
+                        <div class="condition-card">
+                            <h3>3. Disponibilidad del Método Científico</h3>
+                            <p>
+                                Los éxitos de la ciencia natural (física, química) inspiraron la esperanza de aplicar 
+                                métodos científicos a los fenómenos sociales.
+                            </p>
+                        </div>
+                        <div class="condition-card">
+                            <h3>4. Necesidad de Orden Social</h3>
+                            <p>
+                                Gobiernos y élites buscaban comprender y controlar los movimientos sociales y conflictos 
+                                que amenazaban la estabilidad social.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-section">
+                    <h2>📅 Hitos Históricos de la Sociología Científica</h2>
+                    <div class="milestones">
+                        <div class="milestone">
+                            <strong>1798:</strong> Thomas Malthus publica ensayos sobre población y recursos. Primeras reflexiones sistemáticas sobre dinámicas sociales.
+                        </div>
+                        <div class="milestone">
+                            <strong>1830-1842:</strong> Claude Henri de Saint-Simon desarrolla concepto de "fisiología social" y propone aplicar ciencia a la sociedad.
+                        </div>
+                        <div class="milestone">
+                            <strong>1838:</strong> Auguste Comte acuña el término "Sociología" y publica sus "Lecciones de Filosofía Positiva". Nacimiento oficial de la disciplina.
+                        </div>
+                        <div class="milestone">
+                            <strong>1858-1917:</strong> Émile Durkheim establece el método sociológico científico y funda la escuela francesa de Sociología.
+                        </div>
+                        <div class="milestone">
+                            <strong>1883-1920:</strong> Karl Marx desarrolla análisis materialista de la sociedad (aunque no se autodenominaba "sociólogo").
+                        </div>
+                        <div class="milestone">
+                            <strong>1864-1920:</strong> Max Weber desarrolla sociología comprensiva (Verstehen) y análisis de racionalización social.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-section">
+                    <h2>🔄 Evolución de la Sociología</h2>
+                    <p>
+                        Desde su fundación, la Sociología ha evolucionado a través de diferentes fases:
+                    </p>
+                    <ul class="content-list">
+                        <li><strong>Fase Clásica (1830-1920):</strong> Saint-Simon, Comte, Spencer, Durkheim, Marx, Weber</li>
+                        <li><strong>Fase de Consolidación (1920-1945):</strong> Escuelas nacionales, desarrollo de métodos empíricos</li>
+                        <li><strong>Fase de Expansión (1945-1970):</strong> Funcionalismo, estructuralismo, sociología aplicada</li>
+                        <li><strong>Fase Contemporánea (1970-presente):</strong> Teorías críticas, giro cultural, sociología digital</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="interactive-section">
+            <div class="container">
+                <h2>✅ Verifica tu Comprensión</h2>
+                <div class="quiz">
+                    <div class="quiz-question">
+                        <p><strong>1. ¿Cuál de estos eventos NO fue factor determinante en el surgimiento de la Sociología?</strong></p>
+                        <label><input type="radio" name="q1"> a) Revolución Francesa</label>
+                        <label><input type="radio" name="q1"> b) Revolución Industrial</label>
+                        <label><input type="radio" name="q1"> c) Conquista de América</label>
+                    </div>
+                    <div class="quiz-question">
+                        <p><strong>2. ¿Quién acuñó oficialmente el término "Sociología"?</strong></p>
+                        <label><input type="radio" name="q2"> a) Saint-Simon</label>
+                        <label><input type="radio" name="q2"> b) Auguste Comte</label>
+                        <label><input type="radio" name="q2"> c) Émile Durkheim</label>
+                    </div>
+                    <button class="quiz-button" onclick="checkQuiz()">Verificar Respuestas</button>
+                    <div id="quizResult"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="module-navigation">
+            <div class="container">
+                <div class="nav-buttons">
+                    <a href="modulo2.html" class="nav-button prev">← Módulo 2</a>
+                    <a href="modulo4.html" class="nav-button next">Módulo 4 →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Proyecto de Sociología | Ingeniería en Sistemas</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

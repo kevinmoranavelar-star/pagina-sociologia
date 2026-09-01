@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 5: Corrientes y Teorías Sociológicas | Sociología</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo"><h1>📚 Sociología</h1></div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="modulo1.html">Módulo 1: Ciencia</a></li>
+                    <li><a href="modulo2.html">Módulo 2: Conceptualización</a></li>
+                    <li><a href="modulo3.html">Módulo 3: Historia</a></li>
+                    <li><a href="modulo4.html">Módulo 4: Precursores</a></li>
+                    <li><a href="modulo5.html" class="active">Módulo 5: Corrientes</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="module-header">
+            <div class="container">
+                <h1>Módulo 5: Principales Corrientes y Teorías Sociológicas</h1>
+                <p class="module-subtitle">Enfoques teóricos fundamentales de la disciplina</p>
+            </div>
+        </section>
+
+        <section class="module-content">
+            <div class="container">
+                <article class="content-section">
+                    <h2>🎓 Las Grandes Tradiciones Teóricas</h2>
+                    <p>
+                        La Sociología se ha desarrollado a través de múltiples corrientes teóricas, cada una ofreciendo 
+                        perspectivas distintas sobre cómo funcionan las sociedades. Estas teorías no son mutuamente excluyentes, 
+                        sino complementarias y en diálogo permanente.
+                    </p>
+                </article>
+
+                <!-- Cuadro Comparativo de Corrientes -->
+                <article class="content-section">
+                    <h2>📊 Corrientes Teóricas Fundamentales</h2>
+                    <p>Haz clic en cada corriente para explorar sus características:</p>
+                    
+                    <div class="theories-accordion">
+                        <!-- POSITIVISMO -->
+                        <div class="theory-card">
+                            <button class="theory-header" onclick="toggleTheory(this)">
+                                <h3>1. Positivismo</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="theory-content" style="display: none;">
+                                <div class="theory-body">
+                                    <p><strong>Representantes Clave:</strong> Auguste Comte, Émile Durkheim, Herbert Spencer</p>
+                                    <p><strong>Período:</strong> Siglo XIX - principios del XX</p>
+                                    <p><strong>Principios Fundamentales:</strong></p>
+                                    <ul>
+                                        <li>La sociedad puede estudiarse mediante métodos científicos rigurosos</li>
+                                        <li>Los hechos sociales son "cosas" observables y medibles</li>
+                                        <li>Búsqueda de leyes invariables que gobiernan la sociedad</li>
+                                    </ul>
+                                    <p><strong>Enfoque Metodológico:</strong> Énfasis en datos empíricos, estadísticas y variables cuantificables</p>
+                                    <p><strong>Fortalezas:</strong> Riguroso, falsable, enfoque sistemático</p>
+                                    <p><strong>Críticas:</strong> Reduce la complejidad social, ignora subjetividad, busca "leyes" que no existen</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MARXISMO -->
+                        <div class="theory-card">
+                            <button class="theory-header" onclick="toggleTheory(this)">
+                                <h3>2. Materialismo Histórico / Teoría del Conflicto</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="theory-content" style="display: none;">
+                                <div class="theory-body">
+                                    <p><strong>Representantes Clave:</strong> Karl Marx, Friedrich Engels, C. Wright Mills</p>
+                                    <p><strong>Período:</strong> Siglo XIX - presente</p>
+                                    <p><strong>Principios Fundamentales:</strong></p>
+                                    <ul>
+                                        <li>La estructura económica determina la sociedad</li>
+                                        <li>La historia avanza mediante conflictos entre clases sociales</li>
+                                        <li>El capitalismo produce contradicciones inherentes</li>
+                                        <li>Énfasis en poder, explotación y desigualdad</li>
+                                    </ul>
+                                    <p><strong>Enfoque Metodológico:</strong> Análisis histórico del modo de producción, dialéctica, crítica ideológica</p>
+                                    <p><strong>Fortalezas:</strong> Considera poder y conflicto, análisis histórico, relevancia política</p>
+                                    <p><strong>Críticas:</strong> Determinismo económico excesivo, algunas predicciones no se cumplieron</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ESTRUCTURAL FUNCIONALISMO -->
+                        <div class="theory-card">
+                            <button class="theory-header" onclick="toggleTheory(this)">
+                                <h3>3. Estructural Funcionalismo</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="theory-content" style="display: none;">
+                                <div class="theory-body">
+                                    <p><strong>Representantes Clave:</strong> Talcott Parsons, Robert Merton, Herbert Spencer</p>
+                                    <p><strong>Período:</strong> Mediados del XX - presente</p>
+                                    <p><strong>Principios Fundamentales:</strong></p>
+                                    <ul>
+                                        <li>La sociedad es un sistema integrado de partes interdependientes</li>
+                                        <li>Cada institución cumple una función para mantener la estabilidad social</li>
+                                        <li>Énfasis en el orden, la integración y la equilibrio</li>
+                                        <li>Analogía con organismos biológicos</li>
+                                    </ul>
+                                    <p><strong>Enfoque Metodológico:</strong> Análisis de roles, funciones latentes y manifiestas, sistemas adaptativos</p>
+                                    <p><strong>Fortalezas:</strong> Explica cohesión social, útil para análisis institucional</p>
+                                    <p><strong>Críticas:</strong> Conservador, subestima conflicto y cambio, tiende a justificar status quo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- INTERACCIONISMO SIMBÓLICO -->
+                        <div class="theory-card">
+                            <button class="theory-header" onclick="toggleTheory(this)">
+                                <h3>4. Interaccionismo Simbólico</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="theory-content" style="display: none;">
+                                <div class="theory-body">
+                                    <p><strong>Representantes Clave:</strong> George Herbert Mead, Erving Goffman, Howard Becker</p>
+                                    <p><strong>Período:</strong> Siglo XX - presente</p>
+                                    <p><strong>Principios Fundamentales:</strong></p>
+                                    <ul>
+                                        <li>Énfasis en la interacción cara a cara y micro-nivel social</li>
+                                        <li>Las personas actúan conforme a los significados que atribuyen a las cosas</li>
+                                        <li>Los significados se crean mediante interacción social</li>
+                                        <li>El "yo" es construcción social dinámica</li>
+                                    </ul>
+                                    <p><strong>Enfoque Metodológico:</strong> Etnografía, observación participante, análisis cualitativo</p>
+                                    <p><strong>Fortalezas:</strong> Capta subjetividad, rico en matices, explicaciones detalladas</p>
+                                    <p><strong>Críticas:</strong> Dificultad para generalizar, subestima estructuras macrosociales</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TEORÍA CRÍTICA -->
+                        <div class="theory-card">
+                            <button class="theory-header" onclick="toggleTheory(this)">
+                                <h3>5. Teoría Crítica / Escuela de Frankfurt</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="theory-content" style="display: none;">
+                                <div class="theory-body">
+                                    <p><strong>Representantes Clave:</strong> Max Horkheimer, Theodor Adorno, Jürgen Habermas</p>
+                                    <p><strong>Período:</strong> Siglo XX - presente</p>
+                                    <p><strong>Principios Fundamentales:</strong></p>
+                                    <ul>
+                                        <li>Crítica radical a la ideología y a las formas de dominación</li>
+                                        <li>La razón instrumental perpetúa el control social</li>
+                                        <li>Importancia de la emancipación humana</li>
+                                        <li>Análisis de cómo el poder penetra la cultura y conciencia</li>
+                                    </ul>
+                                    <p><strong>Enfoque Metodológico:</strong> Análisis de discurso, crítica histórica, dialéctica negativa</p>
+                                    <p><strong>Fortalezas:</strong> Confronta poder y dominación, relevancia política, profundidad analítica</p>
+                                    <p><strong>Críticas:</strong> A veces pesimista, dificultad para propuestas concretas</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ESTRUCTURALISMO -->
+                        <div class="theory-card">
+                            <button class="theory-header" onclick="toggleTheory(this)">
+                                <h3>6. Estructuralismo</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="theory-content" style="display: none;">
+                                <div class="theory-body">
+                                    <p><strong>Representantes Clave:</strong> Claude Lévi-Strauss, Louis Althusser, Michel Foucault</p>
+                                    <p><strong>Período:</strong> Siglo XX (especialmente 1960s-1970s)</p>
+                                    <p><strong>Principios Fundamentales:</strong></p>
+                                    <ul>
+                                        <li>La sociedad opera conforme a estructuras subyacentes no evidentes</li>
+                                        <li>Los significados surgen de diferencias entre elementos dentro de sistemas</li>
+                                        <li>Lo individual está determinado por estructuras colectivas</li>
+                                        <li>Énfasis en sistemas de signos y símbolos</li>
+                                    </ul>
+                                    <p><strong>Enfoque Metodológico:</strong> Análisis de sistemas, semiótica, arqueología del conocimiento</p>
+                                    <p><strong>Fortalezas:</strong> Revela patrones ocultos, aplicable a múltiples fenómenos culturales</p>
+                                    <p><strong>Críticas:</strong> Reduce agencia individual, determinismo, dificultad para explicar cambio</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TEORÍA DEL CAMBIO SOCIAL -->
+                        <div class="theory-card">
+                            <button class="theory-header" onclick="toggleTheory(this)">
+                                <h3>7. Teorías Contemporáneas (Siglo XXI)</h3>
+                                <span class="toggle-arrow">▼</span>
+                            </button>
+                            <div class="theory-content" style="display: none;">
+                                <div class="theory-body">
+                                    <p><strong>Tendencias Importantes:</strong></p>
+                                    <p><strong>Teoría de Género y Feminismo Sociológico:</strong> Analiza interseccionalidad, patriarcado, construcción social del género</p>
+                                    <p><strong>Sociología Post-moderna:</strong> Cuestiona metarrelatos, enfatiza fragmentación, relativismo</p>
+                                    <p><strong>Teoría de Redes Sociales:</strong> Análisis de conexiones entre actores, poder distribuido</p>
+                                    <p><strong>Sociología Digital / Cibercultura:</strong> Estudio de sociedades digitales, redes virtuales, identidades en línea</p>
+                                    <p><strong>Teoría Crítica de Raza:</strong> Intersecciones de raza, clase, género en sistemas de opresión</p>
+                                    <p><strong>Ecología Política y Sociología Ambiental:</strong> Relaciones entre sociedad y naturaleza, crisis ecológica</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tabla Comparativa Simplificada -->
+                <article class="content-section">
+                    <h2>📋 Tabla Comparativa Simplificada</h2>
+                    <div class="comparison-table large">
+                        <div class="table-header">
+                            <div class="table-cell">Corriente</div>
+                            <div class="table-cell">Enfoque</div>
+                            <div class="table-cell">Nivel de Análisis</div>
+                            <div class="table-cell">Visión del Cambio</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell"><strong>Positivismo</strong></div>
+                            <div class="table-cell">Científico, empírico</div>
+                            <div class="table-cell">Macro y micro</div>
+                            <div class="table-cell">Gradual, evolution</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell"><strong>Marxismo</strong></div>
+                            <div class="table-cell">Conflicto, poder</div>
+                            <div class="table-cell">Macro</div>
+                            <div class="table-cell">Revolucionario</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell"><strong>Funcionalismo</strong></div>
+                            <div class="table-cell">Integración, orden</div>
+                            <div class="table-cell">Macro</div>
+                            <div class="table-cell">Adaptación, equilibrio</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell"><strong>Interaccionismo</strong></div>
+                            <div class="table-cell">Significado, interacción</div>
+                            <div class="table-cell">Micro</div>
+                            <div class="table-cell">Negociación constante</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell"><strong>Teoría Crítica</strong></div>
+                            <div class="table-cell">Emancipación, ideología</div>
+                            <div class="table-cell">Macro</div>
+                            <div class="table-cell">Transformación radical</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-section">
+                    <h2>🔄 Síntesis: Más Allá del Debate Teórico</h2>
+                    <p>
+                        Las corrientes teóricas no son mutuamente excluyentes. La sociología moderna tiende a:
+                    </p>
+                    <ul class="content-list">
+                        <li><strong>Combinar enfoques:</strong> Usar positivismo para recolectar datos, teoría crítica para interpretarlos</li>
+                        <li><strong>Reconocer múltiples niveles:</strong> Integrar análisis micro (interacciones) y macro (estructuras)</li>
+                        <li><strong>Ser reflexivo:</strong> Cuestionar propias premisas y sesgos</li>
+                        <li><strong>Dialogar interdisciplinariamente:</strong> Incorporar perspectivas de otras disciplinas</li>
+                        <li><strong>Ser relevante socialmente:</strong> Conectar investigación académica con problemas sociales concretos</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="interactive-section">
+            <div class="container">
+                <h2>✅ Evaluación Final del Curso</h2>
+                <div class="quiz">
+                    <div class="quiz-question">
+                        <p><strong>1. El Estructural Funcionalismo enfatiza principalmente en:</strong></p>
+                        <label><input type="radio" name="q1"> a) El conflicto de clases</label>
+                        <label><input type="radio" name="q1"> b) La integración social y funciones institucionales</label>
+                        <label><input type="radio" name="q1"> c) Las interacciones simbólicas cara a cara</label>
+                    </div>
+                    <div class="quiz-question">
+                        <p><strong>2. ¿Cuál es una característica principal del Interaccionismo Simbólico?</strong></p>
+                        <label><input type="radio" name="q2"> a) Busca leyes invariables de la sociedad</label>
+                        <label><input type="radio" name="q2"> b) Enfatiza significados creados en interacción social</label>
+                        <label><input type="radio" name="q2"> c) Analiza la estructura económica como determinante</label>
+                    </div>
+                    <div class="quiz-question">
+                        <p><strong>3. La Teoría Crítica se enfoca principalmente en:</strong></p>
+                        <label><input type="radio" name="q3"> a) Describir hechos sociales observables</label>
+                        <label><input type="radio" name="q3"> b) Emancipación y crítica de la dominación</label>
+                        <label><input type="radio" name="q3"> c) Las interacciones microscópicas entre individuos</label>
+                    </div>
+                    <button class="quiz-button" onclick="checkQuiz()">Verificar Respuestas</button>
+                    <div id="quizResult"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusión del Curso -->
+        <section class="conclusion-section">
+            <div class="container">
+                <h2>🎓 Conclusión del Curso</h2>
+                <p>
+                    Has completado una introducción comprehensiva a la Sociología, desde sus fundamentos teóricos hasta 
+                    las corrientes contemporáneas. La Sociología no es un conjunto de respuestas definitivas, sino un conjunto 
+                    de herramientas intelectuales para cuestionar, analizar y comprender la complejidad de nuestras sociedades.
+                </p>
+                <p>
+                    Como futuros Ingenieros en Sistemas, este conocimiento es invaluable: así como los sistemas informáticos 
+                    tienen arquitecturas, restricciones y comportamientos emergentes, las sociedades también operan como sistemas 
+                    complejos con múltiples componentes interconectados. La Sociología nos enseña a analizar estas complejidades 
+                    con rigor y sensibilidad.
+                </p>
+                <div class="note">
+                    <strong>📌 Reflexión Final:</strong> El cambio social no es automático. Requiere comprensión profunda, 
+                    análisis crítico y acción consciente. La Sociología nos proporciona las herramientas para ser actores 
+                    reflexivos en nuestras comunidades.
+                </div>
+            </div>
+        </section>
+
+        <section class="module-navigation">
+            <div class="container">
+                <div class="nav-buttons">
+                    <a href="modulo4.html" class="nav-button prev">← Módulo 4</a>
+                    <a href="index.html" class="nav-button next">Volver a Inicio →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Proyecto de Sociología | Ingeniería en Sistemas</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

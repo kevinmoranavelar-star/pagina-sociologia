@@ -1,0 +1,104 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vim/
+*.code-workspace
+*.iml
+
+# Node y dependencias (si se usa)
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Archivos temporales
+*.tmp
+*.temp
+.temp/
+
+# Backups
+*.bak
+*.backup
+*~
+
+# Logs
+*.log
+logs/
+
+# Archivos de distribución
+dist/
+build/
+*.min.js
+*.min.css
+
+# Archivos locales de desarrollo
+.env
+.env.local
+.env.*.local
+
+# Compilados
+*.o
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dll
+*.dylib
+
+# Archivos de prueba local
+test-local/
+debug/
+
+# IDE específicos
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Carpetas de aplicaciones
+.venv/
+venv/
+env/
+ENV/
+
+# Archivos de compilación
+/out/
+*.class
+
+# OS
+.AppleDouble
+.LSOverride
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Archivos personales
+secrets.json
+config.local.json
+credentials.json
+
+# Caché
+.cache/
+.pytest_cache/
+__pycache__/
+
+# Archivos de versión específica
+.ruby-version
+.node-version
+.python-version

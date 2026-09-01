@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1: Ciencia y Ciencias Sociales | Sociología</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>📚 Sociología</h1>
+                </div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="modulo1.html" class="active">Módulo 1: Ciencia</a></li>
+                    <li><a href="modulo2.html">Módulo 2: Conceptualización</a></li>
+                    <li><a href="modulo3.html">Módulo 3: Historia</a></li>
+                    <li><a href="modulo4.html">Módulo 4: Precursores</a></li>
+                    <li><a href="modulo5.html">Módulo 5: Corrientes</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Module Header -->
+        <section class="module-header">
+            <div class="container">
+                <h1>Módulo 1: Ciencia y Ciencias Sociales</h1>
+                <p class="module-subtitle">Delimitación del conocimiento científico y ubicación de las Ciencias Sociales</p>
+            </div>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="module-content">
+            <div class="container">
+                <!-- Sección 1 -->
+                <article class="content-section">
+                    <h2>🔬 ¿Qué es la Ciencia?</h2>
+                    <p>
+                        La ciencia es un sistema de conocimiento basado en la observación sistemática, la experimentación y 
+                        el método científico. Se caracteriza por:
+                    </p>
+                    <ul class="content-list">
+                        <li><strong>Objetividad:</strong> El conocimiento científico busca ser independiente de creencias personales</li>
+                        <li><strong>Verificabilidad:</strong> Los resultados deben ser comprobables y reproducibles</li>
+                        <li><strong>Método:</strong> Utiliza procedimientos rigurosos y sistemáticos</li>
+                        <li><strong>Precisión:</strong> Emplea mediciones exactas y cuantificables</li>
+                    </ul>
+                </article>
+
+                <!-- Sección 2 -->
+                <article class="content-section">
+                    <h2>💭 Ciencia vs. Sentido Común</h2>
+                    <p>Aunque el sentido común y la ciencia buscan explicar el mundo, tienen diferencias fundamentales:</p>
+                    
+                    <div class="comparison-table">
+                        <div class="comparison-row header">
+                            <div class="comparison-cell">Aspecto</div>
+                            <div class="comparison-cell">Sentido Común</div>
+                            <div class="comparison-cell">Ciencia</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell"><strong>Método</strong></div>
+                            <div class="comparison-cell">Intuición y experiencia personal</div>
+                            <div class="comparison-cell">Método científico sistemático</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell"><strong>Verificación</strong></div>
+                            <div class="comparison-cell">No requiere comprobación</div>
+                            <div class="comparison-cell">Requiere verificación rigurosa</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell"><strong>Alcance</strong></div>
+                            <div class="comparison-cell">Local y circunstancial</div>
+                            <div class="comparison-cell">Universal y generalizable</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell"><strong>Cambio</strong></div>
+                            <div class="comparison-cell">Resistente al cambio</div>
+                            <div class="comparison-cell">Dinámico, sujeto a revisión</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sección 3 -->
+                <article class="content-section">
+                    <h2>📊 Clasificación de las Ciencias</h2>
+                    <p>Las ciencias se clasifican tradicionalmente en dos grandes grupos:</p>
+                    
+                    <div class="accordion" id="accordion1">
+                        <div class="accordion-item">
+                            <button class="accordion-button" data-target="panel1">
+                                <span>Ciencias Naturales o de la Naturaleza</span>
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <div id="panel1" class="accordion-content" style="display: none;">
+                                <div class="accordion-body">
+                                    <p>Estudian los fenómenos de la naturaleza. Ejemplos:</p>
+                                    <ul>
+                                        <li><strong>Física:</strong> Movimiento, energía, materia</li>
+                                        <li><strong>Química:</strong> Composición de sustancias</li>
+                                        <li><strong>Biología:</strong> Organismos vivos y procesos vitales</li>
+                                        <li><strong>Astronomía:</strong> Cuerpos celestes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-button" data-target="panel2">
+                                <span>Ciencias Sociales</span>
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <div id="panel2" class="accordion-content" style="display: none;">
+                                <div class="accordion-body">
+                                    <p>Estudian los fenómenos sociales y comportamiento humano. Ejemplos:</p>
+                                    <ul>
+                                        <li><strong>Sociología:</strong> Estructura y funcionamiento de sociedades</li>
+                                        <li><strong>Antropología:</strong> Culturas y desarrollo humano</li>
+                                        <li><strong>Economía:</strong> Producción, distribución de recursos</li>
+                                        <li><strong>Psicología:</strong> Comportamiento y procesos mentales</li>
+                                        <li><strong>Ciencia Política:</strong> Poder y sistemas políticos</li>
+                                        <li><strong>Historia:</strong> Eventos y procesos del pasado</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sección 4 -->
+                <article class="content-section">
+                    <h2>🌍 Las Ciencias Sociales: Características y Ubicación</h2>
+                    <p>
+                        Las Ciencias Sociales constituyen un conjunto de disciplinas científicas dedicadas al estudio de la 
+                        sociedad y sus manifestaciones. A diferencia de las ciencias naturales:
+                    </p>
+                    
+                    <div class="characteristics">
+                        <div class="char-item">
+                            <h3>Objeto de Estudio</h3>
+                            <p>El ser humano y sus relaciones sociales, no la naturaleza física</p>
+                        </div>
+                        <div class="char-item">
+                            <h3>Complejidad</h3>
+                            <p>Mayor complejidad por la variabilidad del comportamiento humano</p>
+                        </div>
+                        <div class="char-item">
+                            <h3>Metodología</h3>
+                            <p>Combina métodos cualitativos y cuantitativos</p>
+                        </div>
+                        <div class="char-item">
+                            <h3>Interdisciplinariedad</h3>
+                            <p>Frecuentemente dialogan entre sí y con otras disciplinas</p>
+                        </div>
+                    </div>
+
+                    <div class="note">
+                        <strong>📌 Nota Importante:</strong> La Sociología se ubica dentro de las Ciencias Sociales como 
+                        la disciplina que estudia específicamente la estructura, dinámicas y procesos de las sociedades humanas.
+                    </div>
+                </article>
+
+                <!-- Sección 5: Reflexión -->
+                <article class="content-section">
+                    <h2>💡 Reflexión Final</h2>
+                    <p>
+                        Como futuros Ingenieros en Sistemas, es crucial entender que así como los sistemas informáticos 
+                        tienen una estructura compleja con múltiples componentes interconectados, las sociedades humanas también 
+                        funcionan como sistemas complejos. La Sociología nos proporciona herramientas teóricas para analizar 
+                        estas estructuras, similar a como analizamos la arquitectura de software.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Actividad Interactiva -->
+        <section class="interactive-section">
+            <div class="container">
+                <h2>✅ Verifica tu Comprensión</h2>
+                <div class="quiz">
+                    <div class="quiz-question">
+                        <p><strong>1. ¿Cuál es la principal característica del conocimiento científico?</strong></p>
+                        <label><input type="radio" name="q1"> a) Basarse en intuición personal</label>
+                        <label><input type="radio" name="q1"> b) Ser verificable y reproducible</label>
+                        <label><input type="radio" name="q1"> c) No requerir comprobación</label>
+                    </div>
+                    <div class="quiz-question">
+                        <p><strong>2. ¿Las Ciencias Sociales estudian...?</strong></p>
+                        <label><input type="radio" name="q2"> a) Únicamente los números y estadísticas</label>
+                        <label><input type="radio" name="q2"> b) El comportamiento humano y fenómenos sociales</label>
+                        <label><input type="radio" name="q2"> c) Solo la física y química</label>
+                    </div>
+                    <button class="quiz-button" onclick="checkQuiz()">Verificar Respuestas</button>
+                    <div id="quizResult"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section class="module-navigation">
+            <div class="container">
+                <div class="nav-buttons">
+                    <a href="index.html" class="nav-button prev">← Volver a Inicio</a>
+                    <a href="modulo2.html" class="nav-button next">Ir al Módulo 2 →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Proyecto de Sociología | Ingeniería en Sistemas</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
