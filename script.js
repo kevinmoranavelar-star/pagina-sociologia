@@ -35,14 +35,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.querySelectorAll('.accordion-content').forEach(panel => {
                     if (panel.id !== targetId) {
                         panel.style.display = 'none';
+                        panel.classList.remove('show');
+                        panel.previousElementSibling.classList.remove('active');
                     }
                 });
                 
                 // Alternar el estado del actual
                 if (targetPanel.style.display === 'none' || targetPanel.style.display === '') {
                     targetPanel.style.display = 'block';
+                    targetPanel.classList.add('show');
+                    this.classList.add('active');
                 } else {
                     targetPanel.style.display = 'none';
+                    targetPanel.classList.remove('show');
+                    this.classList.remove('active');
                 }
             }
         });
