@@ -1825,6 +1825,119 @@ button,
     }
 }
 
+/* Precursores: perfiles en tarjetas tipo ficha */
+.thinkers-accordion {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 2rem 0 0;
+}
+
+.thinker-card {
+    overflow: hidden;
+    min-width: 0;
+    margin-bottom: 0;
+    border: 1px solid #b8d4d6;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 6px 14px rgba(23, 42, 58, 0.08);
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.thinker-card:hover {
+    transform: translateY(-4px);
+    border-color: #79b6b7;
+    box-shadow: 0 14px 25px rgba(23, 42, 58, 0.14);
+}
+
+.thinker-header {
+    min-height: 76px;
+    padding: 1rem 1rem 1rem 3.3rem;
+    position: relative;
+    background: #eaf4f3;
+    color: var(--primary-color);
+    border-bottom: 1px solid #c9dfdc;
+    font-size: 0.95rem;
+    transition: background-color 180ms ease, color 180ms ease;
+}
+
+.thinker-header::before {
+    content: '✦';
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    display: grid;
+    width: 1.65rem;
+    height: 1.65rem;
+    place-items: center;
+    transform: translateY(-50%);
+    border: 1px solid #7db5b3;
+    border-radius: 8px;
+    background: #ffffff;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.thinker-header:hover,
+.thinker-header.active {
+    background: #dcecea;
+    color: var(--primary-color);
+}
+
+.thinker-header h3 {
+    color: inherit;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+.thinker-header .toggle-arrow {
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+.thinker-content {
+    display: block;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 350ms ease, opacity 220ms ease;
+}
+
+.thinker-content.show {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.thinker-body {
+    min-height: 240px;
+    padding: 1rem;
+    background: #ffffff;
+    color: #48616a;
+    font-size: 0.88rem;
+    line-height: 1.55;
+}
+
+.thinker-body strong {
+    color: var(--primary-color);
+}
+
+@media (max-width: 900px) {
+    .thinkers-accordion {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .thinkers-accordion {
+        grid-template-columns: 1fr;
+    }
+
+    .thinker-body {
+        min-height: auto;
+    }
+}
+
 /* Encabezados de teorias: alto contraste y respuesta al clic */
 .theory-header h3 {
     color: #ffffff;

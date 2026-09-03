@@ -81,6 +81,7 @@ function toggleThinker(button) {
     document.querySelectorAll('.thinker-content').forEach(el => {
         if (el !== content) {
             el.style.display = 'none';
+            el.classList.remove('show');
             el.previousElementSibling.classList.remove('active');
         }
     });
@@ -88,9 +89,11 @@ function toggleThinker(button) {
     // Alternar el actual
     if (content.style.display === 'none' || content.style.display === '') {
         content.style.display = 'block';
+        content.classList.add('show');
         button.classList.add('active');
     } else {
         content.style.display = 'none';
+        content.classList.remove('show');
         button.classList.remove('active');
     }
 }
