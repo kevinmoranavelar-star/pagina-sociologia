@@ -10,10 +10,10 @@ Bienvenidos al proyecto de **Introducción a la Sociología**. Esta guía te ayu
 
 ```
 Equipo de Desarrollo
-├── Integrante 1: Desarrollador Web & Contenido
-├── Integrante 2: Diseño UI/UX & Interactividad
-├── Integrante 3: Backend & Funcionalidades
-└── Integrante 4: Testing & Documentación (Opcional)
+├── Integrante 1: Kevin Orlando Moran
+├── Integrante 2: Kevin Mauricio Rios Guevara
+├── Integrante 3: Manuel Alberto Medina Fajardo
+└── Integrante 4: Christopher Alejandro Urbina Calderon
 ```
 
 ---
