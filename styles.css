@@ -1692,6 +1692,137 @@ button,
     }
 }
 
+/* Timeline: tarjetas verticales interactivas */
+.timeline {
+    position: relative;
+    display: grid;
+    gap: 1.25rem;
+    max-width: 920px;
+    margin: 2rem auto 0;
+    padding: 0.5rem 0 0.5rem 2.5rem;
+}
+
+.timeline::before {
+    left: 0.9rem;
+    width: 3px;
+    height: calc(100% - 1rem);
+    transform: none;
+    border-radius: 4px;
+    background: linear-gradient(var(--secondary-color), #a9d0ca);
+}
+
+.timeline-item:nth-child(odd),
+.timeline-item:nth-child(even) {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.timeline-marker {
+    left: -2.5rem;
+    top: 1.15rem;
+    width: 2.15rem;
+    height: 2.15rem;
+    transform: none;
+    border: 4px solid #fbfcfa;
+    border-radius: 50%;
+    background: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--secondary-color), 0 6px 14px rgba(23, 42, 58, 0.16);
+    font-size: 0.95rem;
+}
+
+.timeline-content {
+    min-height: 126px;
+    padding: 1.45rem 1.55rem;
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(23, 42, 58, 0.07);
+    text-align: left;
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.timeline-item:hover .timeline-content {
+    transform: translateY(-4px);
+    border-color: #a9d0ca;
+    box-shadow: 0 14px 28px rgba(23, 42, 58, 0.13);
+}
+
+.timeline-item:hover .timeline-marker,
+.timeline-item:focus-within .timeline-marker {
+    background: var(--accent-color);
+    transform: scale(1.08);
+}
+
+.timeline-content h3 {
+    margin-bottom: 0;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
+.timeline-details {
+    max-height: 0;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0 solid var(--border-color);
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 350ms ease, opacity 250ms ease, margin-top 350ms ease, padding-top 350ms ease, border-width 350ms ease;
+}
+
+.timeline-details.show {
+    max-height: 600px;
+    margin-top: 1.1rem;
+    padding-top: 1rem;
+    border-top-width: 1px;
+    opacity: 1;
+}
+
+.timeline-details p {
+    margin-bottom: 0.85rem;
+    color: #48616a;
+    line-height: 1.7;
+}
+
+.timeline-details p:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-details strong {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .timeline {
+        padding-left: 2rem;
+    }
+
+    .timeline::before {
+        left: 0.65rem;
+    }
+
+    .timeline-marker {
+        left: -2rem;
+        width: 1.85rem;
+        height: 1.85rem;
+        font-size: 0.85rem;
+    }
+
+    .timeline-content {
+        padding: 1.2rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.1rem;
+    }
+}
+
 /* Encabezados de teorias: alto contraste y respuesta al clic */
 .theory-header h3 {
     color: #ffffff;

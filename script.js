@@ -63,8 +63,10 @@ function toggleTimeline(index) {
     if (details) {
         if (details.style.display === 'none' || details.style.display === '') {
             details.style.display = 'block';
+            details.classList.add('show');
         } else {
             details.style.display = 'none';
+            details.classList.remove('show');
         }
     }
 }
